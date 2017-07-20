@@ -95,10 +95,9 @@ class Board
     if (@table[i][j].value == ' ')
       @table[i][j].value = symb
     else
-      puts "La case #{i}#{j} n'est pas libre, choisissez une autre case."
+      puts "La case #{i+1}#{j+1} n'est pas libre, choisissez une autre case."
       self.play(player,symb)
     end
-    # puts self.end_of_game
   end
 
 end
