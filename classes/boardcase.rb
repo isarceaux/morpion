@@ -1,10 +1,10 @@
 class BoardCase
-  attr_accessor :value, :boardcaserow, :boardcasecol
+  attr_accessor :value
 
-  def initialize(row,col)
+  def initialize()
     @value = nil
-    @boardcaserow = row
-    @boardcasecol = col
+    # @boardcaserow = row
+    # @boardcasecol = col
   end
 
   def value_to_s

@@ -8,7 +8,7 @@ class Board
     for i in (1..3)
       row = []
       for j in (1..3)
-        row.push(BoardCase.new(i,j))
+        row.push(BoardCase.new)
         j+=1
       end
       @table.push(row)
@@ -57,7 +57,6 @@ class Board
     sum_table.push(table_number[0][2]+table_number[1][2]+table_number[2][2])
     sum_table.push(table_number[0][0]+table_number[1][1]+table_number[2][2])
     sum_table.push(table_number[0][2]+table_number[1][1]+table_number[2][0])
-    # puts sum_table
     if sum_table.include?(3)
       return 'Le joueur X a gagné'
     else
