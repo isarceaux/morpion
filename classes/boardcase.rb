@@ -8,7 +8,7 @@ class BoardCase
   end
 
   def value_to_s
-    (@value == nil)? @value = 'empty' : @value = @value.to_s
+    (@value == nil)? @value = ' ' : @value = @value.to_s
     return @value
   end
 end
