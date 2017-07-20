@@ -11,7 +11,6 @@ class Game
     @board = Board.new
   end
 
-  
 
   def start
     @next_player = @playerX
@@ -28,9 +27,6 @@ class Game
       puts 'La partie est finie'
       puts @board.end_of_game
     end
-
-
-
   end
 
 end

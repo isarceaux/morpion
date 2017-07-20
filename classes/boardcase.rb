@@ -11,4 +11,5 @@ class BoardCase
     (@value == nil)? @value = ' ' : @value = @value.to_s
     return @value
   end
+  
 end
